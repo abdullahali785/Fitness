@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Made Feasible</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../JS/controller.js" defer></script>
+    <script src="../JS/model.js" defer></script>
+    <script src="../JS/view.js" defer></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="fixed bg-black opacity-65 h-[100vh] w-[100vw] z-3"></div>
+    <img src="../Assets/background.jpg" alt="Logo" class="imageCover w-[100vw] h-[100vh] object-cover fixed top-0 left-0 z-0"/>
+    <header class="relative z-10 ">
+        <a href="./landingPage.html">
+            <h1 class="relative z-10 hero-title text-white p-5 text-xl sm:text-2xl">Fitness Made <span class="border-b border-red-500">Feasible</span></h1>
+        </a>
+    </header>
+
+    <h1 class="relative z-15 text-white text-center text-5xl sm:text-7xl p-5">Muscles</h1>
+    <section class="hero min-h-[100vh] w-screen">
+        <div class="flex flex-col gap-5 items-center w-screen">
+            <!-- Row containing two cards on desktop and 1 card on mobile -->
+            <div class="relative z-15 mx-auto flex sm:flex-row flex-col w-full max-w-[1000px] gap-3">
+                <!-- Card Start -->
+                <a data-muscle="chest" class="muscle-card w-full p-3 sm:p-0">
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/chestExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Chest</p>
+                    </div>
+                </a>
+                <!-- Card End and Next Card Start -->
+                <a data-muscle="abs"  class="muscle-card w-full p-3 sm:p-0">
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/absExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Abs</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="relative mx-auto z-15 flex sm:flex-row w-full flex-col max-w-[1000px] gap-3">
+                <a data-muscle="biceps" class="muscle-card w-full p-3 sm:p-0">
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out"> 
+                        <img src="../Assets/armExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Biceps</p>
+                    </div>
+                </a>
+                <a data-muscle="upper back" class="muscle-card w-full p-3 sm:p-0">
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/backExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Upper Back</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="relative mx-auto z-15 flex sm:flex-row flex-col w-full max-w-[1000px] gap-3">
+                <a data-muscle="quads" class="muscle-card w-full p-3 sm:p-0"> 
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/legExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Quads</p>
+                    </div>
+                </a>
+                <a data-muscle="triceps" class="muscle-card w-full p-3 sm:p-0">
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/tricepsExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Triceps</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="relative mx-auto z-15 flex sm:flex-row flex-col w-full max-w-[1000px] gap-3">
+                <a data-muscle="hamstrings" class="muscle-card w-full p-3 sm:p-0"> 
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/hamstringExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Hamstrings</p>
+                    </div>
+                </a>
+                <a data-muscle="delts"  class="muscle-card w-full p-3 sm:p-0">
+                    <div class="w-full max-w-[500px] bg-white shadow-lg rounded-2xl border border-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                        <img src="../Assets/deltsExercise.jpg" alt="Push Up" class="w-full h-full  max-h-[150px] object-cover rounded-2xl"/>
+                        <p class="text-center p-9">Delts</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="relative z-15 text-white text-center p-5">
+        <p>&copy; Fitness Made Feasible | Made by Abdullah</p>
+    </footer>
+</body>
+</html>

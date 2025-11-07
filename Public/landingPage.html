@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Made Feasible</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../JS/controller.js" defer></script>
+    <script src="../JS/model.js" defer></script>
+    <script src="../JS/view.js" defer></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="fixed bg-black opacity-65 h-[100vh] w-[100vw] z-3"></div>
+    <img src="../Assets/background.jpg" alt="Logo" class="imageCover w-[100vw] h-[100vh] object-cover fixed top-0 left-0 z-0">
+
+    <header class="relative flex justify-between items-center sm:p-5 p-2 z-10">
+        <h1 class="relative z-10 hero-title text-white p-5 text-xl sm:text-2xl">Fitness Made <span class="border-b border-red-500">Feasible</span></h1>
+        <nav class="relative z-15 sm:flex hidden justify-center text-white gap-10 p-5">
+            <a href="./landingPage.html">Home</a>
+            <a href="./findGyms.html">Find Gyms</a>
+            <a href="./selectMuscles.html">Workouts</a>
+        </nav>
+        <select onchange="mood()" class="z-10 right-5 top-5 p-2 rounded border border-gray-300 bg-white text-gray-700" id="mood-select">
+            <option value="null">How are you feeling today</option>
+            <option value="motivated">Motivated</option>
+            <option value="tired">Tired</option>
+            <option value="sad">Sad</option>
+            <option value="happy">Happy</option>
+            <option value="angry">Angry</option>
+            <option value="heartbroken">Heartbroken</option>
+        </select>
+    </header>
+
+    <section class="hero h-[100vh] w-[100vw]">
+        <div class="relative z-10 flex flex-col items-center justify-center text-center h-[100vh] my-auto">
+            <p class="hero-subtitle italics text-white font-weight-800 text-7xl sm:text-9xl"><i>BE YOUR <span class="text-yellow-500 italics">BEST</span></i></p>
+            <a href="./findGyms.html" class="hero-button button my-[20px] block">Find Gyms!</a>
+            <marquee scrollamount="7"  class="text-white relative z-10 w-full max-w-[600px] mx-auto mt-10" >
+                <div id="quotesContainer" class="flex flex-row gap-10 font-sans!">
+
+                </div>
+            </marquee>
+        </div>
+    </section>
+    
+    <footer class="relative z-15 text-white text-center p-5">
+        <p>&copy; Fitness Made Feasible | Made by Abdullah</p>
+    </footer>
+</body>
+</html>

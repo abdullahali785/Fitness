@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Made Feasible</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../JS/controller.js" defer></script>
+    <script src="../JS/model.js" defer></script>
+    <script src="../JS/view.js" defer></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="fixed bg-black opacity-65 h-[100vh] w-[100vw] z-3"></div>
+    <img src="../Assets/background.jpg" alt="Logo" class="imageCover w-[100vw] h-[100vh] object-cover fixed top-0 left-0 z-0"/>
+
+    <header class="relative z-10 bg-gray-800">
+        <a href="./landingPage.html">
+            <h1 class="relative z-10 hero-title text-white p-5 text-2xl">Fitness Made <span class="border-b border-red-500">Feasible</span></h1>
+        </a>
+        <button onclick="{history.back()}" class="z-10 cursor-pointer absolute right-5 top-2 py-2 px-4 rounded border border-gray-300 bg-white text-2xl text-gray-700" id="mood-select">
+            X 
+        </button>
+    </header>
+
+    <section class="hero h-[100vh] w-[100vw] ">
+        <div class="flex relative z-15 flex-col bg-white gap-5 items-center w-screen pb-9" id="exerciseCard"> </div>
+    </section>
+</body>
+</html>

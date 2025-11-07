@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Made Feasible</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../JS/controller.js" defer></script>
+    <script src="../JS/model.js" defer></script>
+    <script src="../JS/view.js" defer></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="fixed bg-black opacity-65 h-[100vh] w-[100vw] z-3"></div>
+    <header class="relative z-10 flex justify-between items-center sm:p-5 p-2 z-10">
+        <a href="./landingPage.html"><h1 class="relative z-10 hero-title text-white text-xl sm:text-2xl">Fitness Made <span class="border-b border-red-500">Feasible</span></h1></a>
+        <a href="./selectMuscles.html" class="bg-white! right-[10px] top-[10px] z-15 button max-w-[200px]">Select Muscles to Train!</a>  
+    </header>
+
+    <section class="hero min-h-[100vh] w-[100vw]">
+        <img src="../Assets/background.jpg" alt="Logo" class="imageCover w-[100vw] h-[100vh] object-cover fixed top-0 left-0 z-0"/>
+        <div class="flex flex-col relative z-5 p-3 sm:p-10">
+            <form class="flex flex-col gap-3 text-center w-full max-w-[600px] mx-auto justify-center bg-white p-5">
+                <h1 class="text-5xl sm:text-7xl">FIND GYMS NEARBY</h1>
+
+                <input type="text" placeholder="Street" id="street" class="border p-2 rounded"/>
+                <input type="text" placeholder="city" id="city" class="border p-2 rounded"/>
+                <input type="text" placeholder="state" id="state" class="border p-2 rounded"/>
+                <input type="text" placeholder="zip code" id="zipCode" class="border p-2 rounded"/>
+
+                <button id="searchGyms" type="button" class="button bg-indigo-600! text-white max-w-[200px]">Search</button>
+                <p id="error-msg" class="text-red-600 mt-2 text-sm whitespace-pre-line"></p>
+            </form>
+        </div>
+    </section>
+
+   <footer class="relative z-15 text-white text-center p-5">
+        <p>&copy; Fitness Made Feasible | Made by Abdullah</p>
+    </footer>
+</body>
+</html>
