@@ -59,3 +59,7 @@
 - Modular controller functions 
 
 ---
+
+## Home Page 
+![Home](Assets/Home.png?raw=True)
+
