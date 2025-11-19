@@ -76,6 +76,6 @@
 ![Exercises](Assets/Exercises.png?raw=True)
 
 ## Exercise Details 
-![ExerciseDetails ](Assets/ExerciseDetails.png?raw=True)
+![ExerciseDetails ](Assets/ExcerciseDetails.png?raw=True)
 
 
