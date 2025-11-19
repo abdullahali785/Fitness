@@ -63,3 +63,19 @@
 ## Home Page 
 ![Home](Assets/Home.png?raw=True)
 
+## Find Gyms 
+![Address](Assets/Address.png?raw=True)
+
+## Select Suitable Gym 
+![Gyms](Assets/Gyms.png?raw=True)
+
+## Select Muscles 
+![Muscles](Assets/Muscles.png?raw=True)
+
+## Select Exercises 
+![Exercises](Assets/Exercises.png?raw=True)
+
+## Exercise Details 
+![ExerciseDetails ](Assets/ExerciseDetails.png?raw=True)
+
+
