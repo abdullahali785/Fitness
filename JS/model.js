@@ -24,7 +24,7 @@ function loadData(key) {
 
 async function getQuotes(mood) {
     // Queries api to find qoutes based on selected mood
-    const url = "https://zenquotes.io/api/random/keyword=" + mood.toLowerCase()
+    const url = "https://zenquotes.io/api/random/" + mood.toLowerCase()
     const proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(url);
     const qouteResponse = await fetch(proxyUrl);
     const qouteData = await qouteResponse.json();
