@@ -1,6 +1,6 @@
 # 💪🏼 Fitness Made Feasible 
 
-'''Fitness Made Feasible''' is a multi-page, API-driven web app that guides users through a fully personalized fitness experience; from mood-based motivational quotes to finding nearby gyms, selecting muscle groups, and finally receiving exercise recommendations, with visual instructions, tailored to the gym they chose.
+**Fitness Made Feasible** is a multi-page, API-driven web app that guides users through a fully personalized fitness experience; from mood-based motivational quotes to finding nearby gyms, selecting muscle groups, and finally receiving exercise recommendations, with visual instructions, tailored to the gym they chose.
 
 ---
 
